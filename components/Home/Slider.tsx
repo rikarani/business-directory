@@ -50,19 +50,19 @@ export default function Slider(): React.JSX.Element {
 
 const style = StyleSheet.create({
   text: {
-    fontFamily: "outfit-medium",
+    fontFamily: "outfit-bold",
     fontSize: 20,
-    paddingLeft: 20,
+    marginLeft: 20,
     paddingTop: 20,
     marginBottom: 5,
   },
   flatList: {
-    paddingLeft: 20,
+    marginLeft: 20,
   },
   image: {
     width: 300,
     height: 150,
     borderRadius: 16,
-    marginRight: 16,
+    marginRight: 20,
   },
 });
