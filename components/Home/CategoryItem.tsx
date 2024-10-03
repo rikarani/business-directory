@@ -15,7 +15,7 @@ export default function CategoryItem({ item }: Props): React.JSX.Element {
           padding: 10,
           backgroundColor: Colors.PRIMARY,
           borderRadius: 99,
-          marginRight: 15,
+          marginRight: 20,
         }}
       >
         <Image source={{ uri: item.icon }} style={{ width: 40, height: 40 }} />
@@ -26,6 +26,7 @@ export default function CategoryItem({ item }: Props): React.JSX.Element {
           fontSize: 12,
           fontFamily: "outfit-medium",
           marginTop: 5,
+          marginRight: 20,
         }}
       >
         {item.name}
