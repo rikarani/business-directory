@@ -1,5 +1,6 @@
 import { View, Image, Text, TouchableOpacity } from "react-native";
 import { Colors } from "@/constants/Colors";
+import { Href, useRouter } from "expo-router";
 
 type Props = {
   item: Record<string, string> & {
@@ -8,8 +9,10 @@ type Props = {
 };
 
 export default function CategoryItem({ item }: Props): React.JSX.Element {
+  const router = useRouter();
+
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => router.push(`/business/${item.name}` as Href)}>
       <View
         style={{
           padding: 10,
